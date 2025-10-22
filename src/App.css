@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+/* Nền đen thuần */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000000; /* Nền đen thuần */
+  min-height: 100vh;
+  color: #ffffff; /* Text trắng để nổi trên nền đen */
+}
+
+.App {
+  text-align: center;
+  background-color: #000000; /* Kế thừa nền đen */
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer; /* Thay đổi con trỏ khi hover để gợi ý click */
+}
+
+/* Hiệu ứng gợn sóng như sóng biển */
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(100, 149, 237, 0.3) 0%, rgba(100, 149, 237, 0.8) 70%, transparent 100%); /* Gradient xanh dương nhạt cho sóng biển, đậm dần ở giữa */
+  transform: translate(-50%, -50%) scale(0);
+  animation: waveSpread 2s ease-out forwards;
+}
+
+@keyframes waveSpread {
+  0% {
+    opacity: 0.3; /* Bắt đầu mờ */
+    transform: translate(-50%, -50%) scale(0);
+  }
+  50% {
+    opacity: 0.6; /* Giữa chừng đậm hơn */
+    transform: translate(-50%, -50%) scale(2);
+  }
+  100% {
+    opacity: 0.8; /* Kết thúc đậm nhất trước khi fade */
+    transform: translate(-50%, -50%) scale(8); /* Lan tỏa lớn để ra khỏi màn hình */
+  }
+}
