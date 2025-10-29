@@ -9,7 +9,7 @@ export const CONFIG = {
     },
     CAMERA_ANIMATION: {
       DURATION: 2, // 2 giây
-      TV_POSITION: [-0.1, 1.15, 1.95], // Vị trí camera khi zoom vào TV
+      TV_POSITION: [-0.3, 1.2, 1.95], // Vị trí camera khi zoom vào TV
       TV_ROTATION: { x: 0, y: 0 }, // Rotation khi nhìn TV
       SPIRAL_ROTATIONS: 0, // Số vòng xoay (0 = không xoay, 1 = 360 độ, 2 = 720 độ)
       EASE: 'power2.inOut', // Easing function

@@ -1,21 +1,21 @@
 import { useEffect, useRef } from 'react';
 
 const CONFIG = {
-  RECIPIENT_NAME: 'Nguyen Thanh Truc',
+  RECIPIENT_NAME: 'Luyện Mai Nhi',
   TYPEWRITER_SPEED: 80,
   DELAY_BEFORE_NAME: 500,
-  BIRTHDAY_TEXT: 'HAPPY BIRTHDAY 22/10/2025',
-  GREETING_TEXT: 'Hello sweet Nguyen Thanh Truc,',
+  BIRTHDAY_TEXT: 'HAPPY HALLOWEEN',
+  GREETING_TEXT: 'Hello công chúa của ta - Luyện Mai Nhi,',
   POEM_LINES: [
-    'sixteen — a gentle sunrise of your own.',
-    'May every wish find its way to you,',
-    'your bonds deepen like roots in soft earth,',
-    'your home stay warm and kind,',
-    'luck brush your path like sunlight through leaves,',
-    'and your heart rest light, untouched by worry or sorrow.'
+    'Mười tám - một đêm trăng máu dưới bầu trời u ám',
+    'Nguyện mọi lời nguyền hóa thành phước lành quấn quanh linh hồn ngươi',
+    'Dây trói tình thâm đâm xuyên xen kẽ như mạng nhện trong cổ mộ',
+    'Ngôi nhà ngươi ở mãi mãi ấm áp bởi hơi thở mê hoặc từ bóng tối',
+    'Trên tay ngươi là lọ thuốc may mắn được ban phước từ gã phù thủy',
+    'Và trái tim ngươi luôn bị ràng buộc bởi những sợi xích của ta không thể tháo rời.'
   ],
   DELAY_BETWEEN_SECTIONS: 1000,
-  SIGNATURE_TEXT: '- From the quiet thief who carried you off beneath tonight’s sky, the one known as TuAnhVan.',
+  SIGNATURE_TEXT: '- Từ chúa tể hắc ám đánh cắp nỗi buồn ngươi đi dưới ánh trăng máu Halloween, kẻ mang tên Từ Anh Văn.',
   FLASH_DURATION: 300, // Flash ngắn, dữ dội
   FADE_DURATION: 2500 // Fade dài, rùng rợn
 };
